@@ -16,11 +16,18 @@ class User {
   }
 
   // create a setEmotion function setter that sets the value passed in as the new emotion for the object
+  setEmotion(value) {
+    this.emotion = value;
+  }
 }
 
 // Create an instance of the User class, give it the four original properties
 
+let soli = new User("soli", "lotfi", 35, "happy");
+
 // Call the getEmotion method
+
+soli.getEmotion();
 
 // Set a new emotion on the new user
 
