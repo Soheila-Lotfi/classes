@@ -31,7 +31,11 @@ soli.getEmotion();
 
 // Set a new emotion on the new user
 
+soli.setEmotion("excited");
+
 // Call the getEmotion method ... did your new emotion get console logged?
+
+soli.getEmotion();
 
 // Create a new class called Admin that will inherit properties and methods from the User class
 class Admin extends User {
