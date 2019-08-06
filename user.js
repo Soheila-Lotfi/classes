@@ -11,6 +11,10 @@ class User {
   }
   // create a getEmotion function getter that returns a string saying how the user is feeling
 
+  getEmotion() {
+    console.log(this.firstName + "is feeling" + this.emotion);
+  }
+
   // create a setEmotion function setter that sets the value passed in as the new emotion for the object
 }
 
