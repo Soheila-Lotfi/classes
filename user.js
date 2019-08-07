@@ -53,7 +53,11 @@ class Admin extends User {
 }
 
 // Create a new isntance of the Admin class, pass in all the necessary properties
+let tom = new Admin("Tom", "abot", 32, "sad", 4, "programmer");
 
 // Call the authorizeAccess method on the Admin class
 
+tom.authorizeAccess();
+
 // Call the getEmotion method on the Admin class that is inherited from the User class, this should work even though you didn't define getEmotion in the Admin class
+tom.getEmotion();
