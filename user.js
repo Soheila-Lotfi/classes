@@ -40,7 +40,16 @@ soli.getEmotion();
 // Create a new class called Admin that will inherit properties and methods from the User class
 class Admin extends User {
   // Create a constructor that takes the original four  paramaters, but adds 'adminLevel' and 'role' for our Admin class
+  constructor(firstName, lastName, age, emotion, adminLevel, role) {
+    super(firstName, lastName, age, emotion);
+    this.adminLevel = adminLevel;
+    this.role = role;
+  }
+
   // Create a new method called authorizeAccess on the Admin class that returns a string stating the admin's adminLevel.
+  authorizeAccess() {
+    console.log(this.firstName + "has access" + this.adminLevel);
+  }
 }
 
 // Create a new isntance of the Admin class, pass in all the necessary properties
